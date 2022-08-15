@@ -7,6 +7,10 @@ these are some notes on how the API works until that is here; for general
 community information see the [Facebook
 group](https://www.facebook.com/groups/197056519103446)
 
+*The below are some unofficial notes. Using any of this can probably void your
+warranty, or at least make it difficult to support you, if you don't understand
+it, it's probably not worth trying any of this yet, sorry.*
+
 ## Hardware
 
 The device is ESP32 based. Around 8MB of flash? (df via API reports 7MB, which

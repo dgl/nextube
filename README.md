@@ -14,8 +14,8 @@ it, it's probably not worth trying any of this yet, sorry.*
 ## Hardware
 
 The device is ESP32 based. Around 8MB of flash? (df via API reports 7MB, which
-includes a bunch of the clock faces shipped in the app bundle, firmware is
-1.4MB)
+includes a bunch of the clock faces shipped in the app bundle (~5.1MB),
+firmware is 1.4MB)
 
 ## HTTP API
 

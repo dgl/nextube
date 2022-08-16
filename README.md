@@ -24,7 +24,17 @@ firmware is 1.4MB)
 ## Serial API
 
 Presents a USB Serial API. Based on the software appears to do more than HTTP
-(different config/update process?), but I haven't yet looked into it in detail.
+(different config/update process?); the app has some files that are part of an
+ESP32 SDK, so it is possible it is doing a full flash of the device -- maybe
+this is the way they will offer a real SDK?
+
+If you alter the clock faces bundled within in the app (e.g.
+`/Applications/Rotrics Nextube.app/Contents/Resources/static/data`, see the
+community FAQ for more details) you can make the app update them over USB, this
+will only work over USB. Beware: If you make images which are more complex or
+less compressed than the provided clock faces you can very easily run the
+device out of disk space (see notes on HTTP API `df` endpoint for a way to
+check).
 
 ## Scripts
 

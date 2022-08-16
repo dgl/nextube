@@ -83,7 +83,7 @@ curl http://$nextube'/api/file/ls?dir=/'
 {"status":"OK","data":[{"file":"/audio/Unwritten.mp3","size":720797},{"file":"/audio/bell.wav","size":180044},{"file":"/audio/ringtones_zip.mp3","size":44439},{"file":"/audio/timer.wav","size":180044},{"file":"/audio/tremolo.wav","size":9646},{"file":"/audio/tremolo1.wav","size":9646},{"file":"/audio/tremolo2.wav","size":3246},{"file":"/audio/tremolo3.wav","size":3246},{"file":"/audio/tremolo4.wav","size":3246},{"file":"/config.json","size":1402},{"file":"/images/album/01.jpg","size":8214},{"file":"/images/album/02.jpg","size":8214},{"file":"/images/album/03.jpg","size":8214},{"file":"/images/album/04.jpg","size":8214},{"file":"/images/album/05.jpg","size":8048},{"file":"/images/album/06.jpg","size":8333},{"file":"/images/system/matrix/a.jpg","size":5299},{"file":"/images/system/matrix/i.jpg","size":3140},{"file":"/images/system/matrix/m.jpg","size":6108},{"file":"/images/system/matrix/r.jpg","size":6169},{"file":"/images/system/matrix/t.jpg","size":3979},{"file":"/images/system/matrix/x.jpg","size":5687},{"file":"/images/system/setting/E.jpg","size":2005},{"file":"/images/system/setting/O.jpg","size":2725},{"file":"/images/system/setting/R.jpg","size":2852},{"file":"/images/system/setting/album.jpg","size":4239},{"file":"/images/system/setting/blank.jpg","size":1288},{"file":"/images/system/setting/countdown.jpg"}]}
 ```
 
-(Note does not include clock faces uploaded via the app -- does serial access write them elsewhere?)
+(Note does not include clock faces uploaded via the app -- it looks like there's a limit on the number of files returned, doing e.g. `/images/themes/Custom01` will show you the files in that location.)
 
 * GET /api/file/df
 
